@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн Тестілеу Порталы</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        p.subtitle {
+            color: #64748b;
+            font-size: 15px;
+            margin-top: 6px;
+        }
+        
+        .section-header {
+            font-size: 18px;
+            font-weight: 600;
+            color: #334155;
+            margin: 30px 0 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-header::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #e2e8f0;
+        }
+
+        /* 2 колонкалы карточкалар торы */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+        }
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            border-color: #cbd5e1;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .badge {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        /* Тіл таңдау батырмалары */
+        .btn-group {
+            display: flex;
+            gap: 8px;
+        }
+        .btn-lang {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            background-color: #f1f5f9;
+            color: #475569;
+            transition: background-color 0.15s ease, color 0.15s ease;
+        }
+        .btn-lang:hover {
+            background-color: #2563eb;
+            color: #ffffff;
+        }
+
+        /* Сынып бойынша түсті акценттер (жұмсақ пастель) */
+        .g-2 { background-color: #f43f5e; }
+        .g-3 { background-color: #fb923c; }
+        .g-4 { background-color: #facc15; }
+        .g-5 { background-color: #4ade80; }
+        .g-6 { background-color: #2dd4bf; }
+        .g-7 { background-color: #38bdf8; }
+        .g-8 { background-color: #818cf8; }
+        .g-9 { background-color: #c084fc; }
+        .g-eng { background-color: #06b6d4; }
+
+        /* Ағылшын тілі арнайы карточкасы */
+        .card-full {
+            grid-column: 1 / -1;
+            background: #ffffff;
+        }
+
+        @media (max-width: 480px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+            .btn-group {
+                width: 100%;
+            }
+            .btn-lang {
+                flex: 1;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Онлайн тестілеу порталы</h1>
+        <p class="subtitle">Қажетті сыныпты таңдап, тестті бастау үшін тілді басыңыз</p>
+    </header>
+
+    <div class="section-header">Математика</div>
+    
+    <div class="cards-grid">
+        <!-- 2 сынып -->
+        <div class="card">
+            <div class="card-title">
+                <span class="badge g-2"></span>
+                2-сынып / 2 класс
+            </div>
+            <div class="btn-group">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxQ1s70mgPPo_WJl39WHNOUOgSkOTmVSYxKGxBqiZ9TvtokA/viewform?usp=publish-editor" target="_blank" class="btn-lang">ҚАЗ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2RpdeVe5gHnpBFA_xh3IIXN8Rgg0NgItedwdlG7NguLLUQw/viewform?usp=publish-editor" target="_blank" class="btn-lang">РУС</a>
+            </div>
+        </div>
+
+        <!-- 3 сынып -->
+        <div class="card">
+            <div class="card-title">
+                <span class="badge g-3"></span>
+                3-сынып / 3 класс
+            </div>
+            <div class="btn-group">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfusRUcVCTiWBaJ1ZOFUAQNSqoCl873IIMTfhgsmbB3Z9JJCQ/viewform?usp=publish-editor" target="_blank" class="btn-lang">ҚАЗ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc59LZSMimVcUPVKyk99qHLsMAqJmowJ6wIuQq-0SYzd3ZBgw/viewform?usp=publish-editor" target="_blank" class="btn-lang">РУС</a>
+            </div>
+        </div>
+
+        <!-- 4 сынып -->
+        <div class="card">
+            <div class="card-title">
+                <span class="badge g-4"></span>
+                4-сынып / 4 класс
+            </div>
+            <div class="btn-group">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScf-K_zdvcMRXyXVr1eUls_vd9_FUH6zvHnSZeEvbhj8nXQrw/viewform?usp=publish-editor" target="_blank" class="btn-lang">ҚАЗ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdg9ryKBz00501xmvlpltccyndHyCCaiPoqM72qWQSEBP_F1A/viewform?usp=publish-editor" target="_blank" class="btn-lang">РУС</a>
+            </div>
+        </div>
+
+        <!-- 5 сынып -->
+        <div class="card">
+            <div class="card-title">
+                <span class="badge g-5"></span>
+                5-сынып / 5 класс
+            </div>
+            <div class="btn-group">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScypHmyDFcZcAOOk4LOTIUcpSBQE5BXOWZ_C0qhvOK9gxsM-Q/viewform?usp=publish-editor" target="_blank" class="btn-lang">ҚАЗ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScqeeEc2IaG2K7EkYkVlOoW-pFzpJSBhWecjCv18fo9il_2ng/viewform?usp=publish-editor" target="_blank" class="btn-lang">РУС</a>
+            </div>
+        </div>
+
+        <!-- 6 сынып -->
+        <div class="card">
+            <div class="card-title">
+                <span class="badge g-6"></span>
+                6-сынып / 6 класс
+            </div>
+            <div class="btn-group">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeO1N4zQ9CkiMYfo1tRIm5eztLSvKf560DJlB30yHuTR3E_HQ/viewform?usp=publish-editor" target="_blank" class="btn-lang">ҚАЗ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2rierMIAlaVw7V5W9DzqWYhAlqgU4iGE_6sxdxklIj5gY0g/viewform?usp=publish-editor" target="_blank" class="btn-lang">РУС</a>
+            </div>
+        </div>
+
+        <!-- 7 сынып -->
+        <div class="card">
+            <div class="card-title">
+                <span class="badge g-7"></span>
+                7-сынып / 7 класс
+            </div>
+            <div class="btn-group">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnSY1k4JjJ7q-iqMvKPV10Eeam2wClpPy7QaSax8Bo6SjHnA/viewform?usp=dialog" target="_blank" class="btn-lang">ҚАЗ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4UDgxFMR2G7yVBuLoGAiONUyZ78iQsdoZBmODhWxm7U8hEA/viewform?usp=dialog" target="_blank" class="btn-lang">РУС</a>
+            </div>
+        </div>
+
+        <!-- 8 сынып -->
+        <div class="card">
+            <div class="card-title">
+                <span class="badge g-8"></span>
+                8-сынып / 8 класс
+            </div>
+            <div class="btn-group">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPBbLaBtf3116tKJ9PhIDa9LTfIm2YgQUAyukeWfPMMvmj4g/viewform?usp=publish-editor" target="_blank" class="btn-lang">ҚАЗ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwBTg-8-_RKwMQgnCkhju9SQT6b7HUwQn6mYB9BnxhCYqRQQ/viewform?usp=publish-editor" target="_blank" class="btn-lang">РУС</a>
+            </div>
+        </div>
+
+        <!-- 9 сынып -->
+        <div class="card">
+            <div class="card-title">
+                <span class="badge g-9"></span>
+                9-сынып / 9 класс
+            </div>
+            <div class="btn-group">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFz5iejXu863LFI3pXYLv_8EVf6QvgkB-yTwP3Yq6qlLnOeA/viewform?usp=publish-editor" target="_blank" class="btn-lang">ҚАЗ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScyyRPQ4JSo-xNdhY9vzX9i0VHk6MDTvvqhpvQLW5SPdnEUhA/viewform?usp=publish-editor" target="_blank" class="btn-lang">РУС</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">Ағылшын тілі / English</div>
+
+    <div class="cards-grid">
+        <div class="card card-full">
+            <div class="card-title">
+                <span class="badge g-eng"></span>
+                Primary Entry Test (1-5 сынып)
+            </div>
+            <a href="https://forms.gle/KS8na5KLZtmQYc7QA" target="_blank" class="btn-lang">Тестті бастау</a>
+        </div>
+
+        <div class="card card-full">
+            <div class="card-title">
+                <span class="badge g-eng"></span>
+                Oxford Entry Test (6-9 сынып)
+            </div>
+            <a href="https://forms.gle/FMaeRz1zPnQWvxtX7" target="_blank" class="btn-lang">Тестті бастау</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
